@@ -1,0 +1,13 @@
+#headerid {
+  float: left;
+  padding: 0;
+  margin: 0;
+  min-height: 0vw;
+  min-width: 100%;
+}
+
+#headerimg {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
