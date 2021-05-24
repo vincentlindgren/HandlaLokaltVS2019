@@ -11,9 +11,8 @@ export class CreateStorePage extends Component {
     static displayName = CreateStorePage.name;
 
     constructor(props) {
-        super(props); //"super refers to the parent class constuctor, i det här fallet: React.Component, 
-        //MÅSTE ALLTID ha med "super(props)"!!!!! för att kunna använda sig av "this." Detta för att super constructorn behöver köras för att deniniera
-        //vad "this" är för något. 
+        super(props); 
+
 
         this.state = {
             isAuthenticated: false,
@@ -28,7 +27,7 @@ export class CreateStorePage extends Component {
     }
 
 
-    componentWillUnmount() { //Fattar inte vad denna gör?
+    componentWillUnmount() { 
         authService.unsubscribe(this._subscription);
     }
 
@@ -39,11 +38,11 @@ export class CreateStorePage extends Component {
             isAuthenticated,
             userName: user && user.name
         });
-        console.log(user.name, user); //kan logga user OBJ 
+        console.log(user.name, user); 
     }
 
 
-    render() { //Här behövs en IF() som verifierar att isAuthenticated är true och att username inte är null!!!!!
+    render() { 
         const { userName } = this.state;
         return this.authView(userName);
     }

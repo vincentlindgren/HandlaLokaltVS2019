@@ -13,14 +13,8 @@ function SpecificStore (props){
       return(
                 <div className="TEST">
                     <h1> {props.storeObj.name}</h1>
-                </div>
-            
-    );
-
-
-    
+                </div>     
+      ); 
 }
-
-
 
 export default SpecificStore

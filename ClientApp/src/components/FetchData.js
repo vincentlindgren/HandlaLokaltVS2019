@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import authService from './api-authorization/AuthorizeService'
 
+
+//DENNA KLASS ANVÄNDS EJ OCH BÖR DELETAS
 export class FetchData extends Component {
   static displayName = FetchData.name;
 
